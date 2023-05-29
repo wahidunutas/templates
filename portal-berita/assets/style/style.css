@@ -1,0 +1,557 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #4E6E81; */
+}
+
+ul li {
+    list-style: none;
+}
+
+/* header */
+.nav-1 {
+    background-color: #4E6E81;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-1 a {
+    text-decoration: none;
+    color: rgb(247, 246, 246);
+    font-size: 12px;
+}
+
+.nav-1 .social-head {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-1 .social-head a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-2 {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-2 h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+.nav-3 {
+    background-color: #4E6E81;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    /* top: 0; */
+}
+
+.nav-3.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+.nav-3 .navbar-nav .nav-link {
+    color: white;
+}
+
+.nav-3 .navbar-nav .nav-link:focus {
+    color: white;
+}
+
+.nav-3 form .form-control {
+    width: 320px;
+}
+
+.nav-3 form .btn {
+    background-color: white;
+    border: none;
+}
+
+.nav-3 form .btn:hover {
+    background-color: rgb(123, 123, 248);
+    color: white;
+}
+
+
+.main-right {
+    width: 410px;
+}
+
+.main-right .card {
+    border: none;
+}
+
+
+.jumbotron {
+    /* padding: 70px 0; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+}
+
+.jumbo-1 {
+    grid-area: 1 / 1 / 3 / 3;
+}
+
+.jumbo-2 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.jumbo-3 {
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+.jumbo-4 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.jumbo-5 {
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+.jumbotron .jumbo-1 img {
+    width: 100%;
+    height: 448px;
+    filter: brightness(0.5);
+}
+
+.jumbo-1 .label-caption {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: white;
+    z-index: 999;
+}
+
+.jumbo-1 .carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -15%);
+}
+
+.jumbotron .jumbo-2 img,
+.jumbotron .jumbo-3 img,
+.jumbotron .jumbo-4 img,
+.jumbotron .jumbo-5 img {
+    width: 100%;
+    height: 224px;
+    transition: all .32s ease-in-out;
+    filter: brightness(0.6);
+}
+
+.jumbotron .jumbo-2:hover img,
+.jumbotron .jumbo-3:hover img,
+.jumbotron .jumbo-4:hover img,
+.jumbotron .jumbo-5:hover img {
+    transform: scale(1.5) rotate(5deg);
+    filter: brightness(1);
+}
+
+
+.jumbotron .jumbo-2 .carousel-caption a,
+.jumbotron .jumbo-3 .carousel-caption a,
+.jumbotron .jumbo-4 .carousel-caption a,
+.jumbotron .jumbo-5 .carousel-caption a {
+    position: absolute;
+    left: -20px;
+    bottom: -10px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.main-content {
+    padding: 40px 20px;
+    gap: 40px;
+}
+
+.popular .card {
+    border: none;
+    width: 280px;
+}
+
+/* fashion recenet */
+.recent-fashion-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+.rf-1 {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.rf-2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.rf-3 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.rf-4 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.rf-5 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.recent-fashion .card .card-body {
+    margin-top: -10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.recent-fashion .card .card-title a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+
+}
+
+.recent-fashion .rf-2,
+.recent-fashion .rf-3,
+.recent-fashion .rf-4,
+.recent-fashion .rf-5 {
+    /* width: 270px; */
+    width: 100%;
+    height: 200px;
+    border: none;
+}
+
+.recent-fashion .rf-2 .card-title,
+.recent-fashion .rf-3 .card-title,
+.recent-fashion .rf-4 .card-title,
+.recent-fashion .rf-5 .card-title {
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.recent-fashion .rf-2 .card-text,
+.recent-fashion .rf-3 .card-text,
+.recent-fashion .rf-4 .card-text,
+.recent-fashion .rf-5 .card-text {
+    font-size: 12px;
+    margin-top: -5px;
+}
+
+.recent-fashion .rf-1 {
+    width: 570px;
+    border: none;
+}
+
+.recent-fashion .rf-1 img {
+    width: 100%;
+    height: 390px;
+}
+
+.recent-fashion .rf-2 img,
+.recent-fashion .rf-3 img,
+.recent-fashion .rf-4 img,
+.recent-fashion .rf-5 img {
+    width: 100%;
+    height: 140px;
+}
+
+
+.recent-travel-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 4px;
+    grid-row-gap: 4px;
+}
+
+.rt-1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.rt-2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.rt-3 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.rt-4 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.rt-5 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.rt-6 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.recent-travel .card {
+    width: 100%;
+    border: none;
+}
+
+.recent-travel .card img {
+    width: 100%;
+    height: 200px;
+}
+
+.recent-travel .card .card-body {
+    margin-top: -10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.recent-travel .card .card-title a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+
+}
+
+.recent-fashion h2,
+.recent-travel h2,
+.latest h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.recent-fashion h2::after,
+.recent-travel h2::after,
+.latest h2::after {
+    content: "";
+    display: flex;
+    border-bottom: 10px solid #4E6E81;
+    border-radius: 5px;
+}
+
+.recent-fashion>div a,
+.recent-travel>div a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+}
+
+#list,
+#grid {
+    border: none;
+    background-color: transparent;
+}
+
+#list:hover,
+#grid:hover {
+    transform: scale(1.1);
+}
+
+
+.grid a,
+.list a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.grid .card-article:hover img,
+.list .card-article:hover img {
+    opacity: 0.8;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    transition: all .20s ease-in-out;
+}
+
+.grid .card-article img {
+    width: 100%;
+    height: 200px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list .card-article {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.list .card-article img {
+    width: 200px;
+    height: 122px;
+}
+
+
+.popular {
+    font-family: 'Poppins', sans-serif;
+}
+
+.popular .card .card-header {
+    background-color: #4E6E81;
+    color: white;
+    font-weight: 600;
+}
+
+.popular .card .card-body {
+    padding: 10px 5px;
+    font-family: 400;
+    text-transform: capitalize;
+}
+
+
+
+/* artikel page */
+.main-content-article .popular .card {
+    border: none;
+    width: 300px;
+}
+
+.pages-article img {
+    max-width: 100%;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+.pages-article p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.article-head {
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+    /* font-family: 800; */
+}
+
+.article-head .prof {
+    line-height: 0;
+}
+
+.article-head h5 {
+    font-size: 18px;
+}
+
+.article-head p {
+    font-size: 12px;
+}
+
+
+
+.related-content {
+    font-family: 'Poppins', sans-serif;
+}
+
+.related .card a {
+    text-decoration: none;
+    color: black;
+    /* font-weight: 800; */
+}
+
+.related .card img {
+    width: 100%;
+    height: 140px;
+}
+
+.related-content {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 15px;
+}
+
+.related-content .card {
+    width: 240px;
+}
+
+.related-content .card-title {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+
+/* shared modal */
+.sharemodal .shared button:hover {
+    transform: scale(1.2);
+}
+
+
+.comments-box {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.comments-box h5 {
+    font-weight: 600;
+}
+
+.comments-box .section-users .head img {
+    width: 50px;
+    height: 50px;
+}
+
+.comments-box .section-users .response .response-content button {
+    margin-top: -20px;
+}
+
+
+
+#btn-back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 999;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: #4E6E81;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
